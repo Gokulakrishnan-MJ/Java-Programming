@@ -1,0 +1,5 @@
+package sqrt_cube;
+
+public interface Main {
+
+}

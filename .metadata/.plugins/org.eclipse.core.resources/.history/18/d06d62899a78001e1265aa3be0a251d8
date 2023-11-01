@@ -1,0 +1,5 @@
+package Neon_Number;
+//write a java program to check whether a given number is neon number or not?
+public interface Main {
+
+}
