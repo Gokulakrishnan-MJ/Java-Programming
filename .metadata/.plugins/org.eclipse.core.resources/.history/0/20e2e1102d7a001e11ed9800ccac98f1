@@ -1,0 +1,5 @@
+package AutomorphicNumber;
+
+public interface Test {
+
+}

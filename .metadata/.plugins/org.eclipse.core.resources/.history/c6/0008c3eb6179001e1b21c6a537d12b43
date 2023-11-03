@@ -1,0 +1,19 @@
+package Disarium_Number;
+
+public interface Test {
+
+	public static void disariumCheck(int num) {
+		
+		
+	}
+	public static int count(int number)
+	{
+		int count=0;
+		while(number!=0)
+		{
+			number/=10;
+			count++;
+		}
+		return count;
+	}
+}

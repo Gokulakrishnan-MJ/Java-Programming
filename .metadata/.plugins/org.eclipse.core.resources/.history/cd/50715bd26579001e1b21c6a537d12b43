@@ -1,0 +1,5 @@
+package Harshad_niven_number;
+
+public interface Main {
+
+}

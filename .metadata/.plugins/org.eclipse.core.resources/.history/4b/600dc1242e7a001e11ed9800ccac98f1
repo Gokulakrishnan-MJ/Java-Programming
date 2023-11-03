@@ -1,0 +1,21 @@
+package AutomorphicNumber;
+
+public interface Test {
+
+	static void Automorphic(int num) {
+		int temp=num;
+		int square=num*num;
+		System.out.println(square);
+		boolean data=false;
+		while(temp%10==square%10)
+		{
+			data=true;
+			temp/=10;
+			square/=10;
+		}
+		if(data)System.out.println("Automorphic number");
+		else System.out.println("Not a Automorphic");
+		
+	}
+
+}

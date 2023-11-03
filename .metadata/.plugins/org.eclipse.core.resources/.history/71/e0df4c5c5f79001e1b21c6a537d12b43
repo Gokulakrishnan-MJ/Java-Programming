@@ -1,0 +1,18 @@
+package Disarium_Number;
+
+public interface Test {
+	public static void disariumCheck(int number)
+	{
+		int temporary=number;
+		int digit=0;
+		while(temporary!=0)
+		{
+			temporary/=10;
+			digit++;
+		}
+		
+		
+		
+	}
+
+}
