@@ -1,0 +1,5 @@
+package StrictlyIncreasingArray;
+
+public interface Test {
+
+}

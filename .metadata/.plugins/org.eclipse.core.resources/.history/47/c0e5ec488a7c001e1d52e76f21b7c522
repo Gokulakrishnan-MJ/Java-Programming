@@ -1,0 +1,5 @@
+package Amicable_Number;
+
+public interface Main {
+
+}

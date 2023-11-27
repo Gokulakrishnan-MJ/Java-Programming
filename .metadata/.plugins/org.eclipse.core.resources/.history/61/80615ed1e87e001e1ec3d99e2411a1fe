@@ -1,0 +1,95 @@
+package SamplePrint;
+
+public interface MainPrint {
+	java.util.Scanner sc = new java.util.Scanner(System.in);
+	
+
+	public static void main(String[] args) {
+		String str = "Welcome to ";
+		String str4="";
+		String str1 = " , ";
+		String str2 = "All the Best!";
+		String str3 = "Do Well!";
+		int branch;
+		int institute;
+		System.out.println("Welcome to E-Learning");
+		Courses();
+			System.out.print("Enter your Choice : ");
+			int choice = sc.nextInt();
+			switch (choice) {
+			case 1:
+				str+="Software Development Course";
+				displayBranch();
+				System.out.println();
+				 branch = userInp();
+				switch (branch) {
+				case 1:
+					str1 +=  "Chrompet";
+					break;
+				case 2:
+					str1 +=  "vadapalani";
+					break;
+				case 3:
+					str1 +=  "Velachery";
+					break;
+				}
+				displayInstitute();
+				institute=userInp();
+				switch(institute)
+				{
+				case 1:
+					
+				}
+				break;
+			case 2:
+				str+="Software Testing Course";
+				displayBranch();
+				break;
+			case 3:
+				exitPrint();
+				System.exit(choice);
+
+			default:
+				System.out.println("Enter a Valid Choice");
+			}
+			System.out.println();
+			System.out.println();
+			System.out.println(str);
+			System.out.println(str1+" "+str4);
+			System.out.println(str2+" "+str3);
+
+		
+	}
+
+	public static void Courses() {
+		System.out.println("1 : Software Development Course");
+		System.out.println("2 : Software Testing Course");
+		System.out.println("3 : Exit");
+	}
+
+	public static void exitPrint() {
+		System.out.println("Thank you for Using E-Learning");
+	}
+
+	public static void displayBranch() {
+		System.out.println("1 : Chrompet");
+		System.out.println("2 : Vadapalani");
+		System.out.println("3 : Velachery");
+		System.out.println("4 : Exit");
+	}
+
+	public static void displayInstitute() {
+		System.out.println("1 : J Spiders");
+		System.out.println("2 : Q Spiders");
+		System.out.println("3 : Exit");
+	}
+
+	public static void displayMessage() {
+		
+	}
+
+	public static int userInp() {
+		int choice = sc.nextInt();
+		return choice;
+	}
+}

@@ -1,0 +1,19 @@
+package StrictlyIncreasingArray;
+
+public interface Test {
+
+	static void check(int[] arr) {
+		int st = 0;
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (arr[i + 1] > arr[i])
+				System.out.println("Strictl");
+			else {
+				System.out.println("Not a Strictly Increasing Array");
+				break;
+			}
+			
+
+		}
+
+	}
+}

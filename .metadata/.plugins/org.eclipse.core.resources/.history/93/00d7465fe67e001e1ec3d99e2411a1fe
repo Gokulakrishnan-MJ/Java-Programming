@@ -1,0 +1,62 @@
+package SamplePrint;
+
+public interface MainPrint {
+	java.util.Scanner sc = new java.util.Scanner(System.in);
+	static String str = "Welcome to ";
+	static String str1="";
+	static String str3="All the Best!";
+	static String str4="Do Well!"
+	public static void main(String[] args) {
+		
+		System.out.println("Welcome to E-Learning");
+		Courses();
+		while (true) {
+
+			System.out.print("Enter your Choice : ");
+			int choice = sc.nextInt();
+			switch (choice) {
+			case 1:
+				displayBranch();
+				
+				break;
+			case 2:
+				displayBranch();
+				break;
+			case 3:
+				exitPrint();
+				System.exit(choice);
+
+			default:
+				System.out.println("Enter a Valid Choice");
+			}
+
+		}
+	}
+
+	public static void Courses() {
+		System.out.println("1 : Software Development Course");
+		System.out.println("2 : Software Testing Course");
+		System.out.println("3 : Exit");
+	}
+
+	public static void exitPrint() {
+		System.out.println("Thank you for Using E-Learning");
+	}
+
+	public static void displayBranch() {
+		System.out.println("1 : Chrompet");
+		System.out.println("2 : Vadapalani");
+		System.out.println("3 : Velachery");
+		System.out.println("4 : Exit");
+	}
+	public static void displayInstitute()
+	{
+		System.out.println("1 : J Spiders");
+		System.out.println("2 : Q Spiders");
+		System.out.println("3 : Exit");
+	}
+	public static void displayMessage()
+	{
+		System.out.println();
+	}
+}

@@ -1,0 +1,21 @@
+package SamplePrint;
+
+public interface MainPrint {
+	java.util.Scanner sc=new java.util.Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.println("Welcome to E-Learning");
+		Courses();
+		System.out.print("Enter your Choice : ");
+		int choice=sc.nextInt();
+	}
+	public static void Courses()
+	{
+		System.out.println("1 : Software Development Course");
+		System.out.println("2 : Software Testing Course");
+		System.out.println("3 : Exit");
+	}
+	public static void exitMessage()
+	{
+		System.out.println("Thank you for Using E-Learning");
+	}
+}
